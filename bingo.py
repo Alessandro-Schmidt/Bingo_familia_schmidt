@@ -16,7 +16,6 @@ shuffle(numeros)
 parada = ''
 i = 0
 mostrados = []
-print(numeros)
 
 while (i<len(numeros)) and parada!='bingo':
     mostrados.append(numeros[i])
