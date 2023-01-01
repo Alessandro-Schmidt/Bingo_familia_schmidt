@@ -9,7 +9,7 @@ input(click_to_beggin)
 print('\033[0;30;41mDigite "bingo" para encerrar\033[m')
 
 numeros = []
-for i in range(1,100):
+for i in range(1,81):
     numeros.append(i)
    
 shuffle(numeros) 
@@ -27,7 +27,7 @@ while (i<len(numeros)) and parada!='bingo':
     parada = str(input('\033[0;30;42mAperte enter ou digite "bingo"\033[m\n'))
     for a in range(1,4):
         print('.\n')
-        sleep(0.8)
+        sleep(0.5)
 
 vencedor = str(input('Qual o nome do vencedor: '))
 parabens = pyfiglet.figlet_format(('Parabens '+vencedor+'\nVoce venceu a\nrodada do bingo'), font="standard")
